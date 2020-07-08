@@ -11,12 +11,18 @@ export default HomeScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.container}>
             <View>
-                <Text>Home Screen</Text>
+                <Text>Home Screen</Text>  
             </View>
             <Button
                 title="Go to User"
                 onPress={() => {
                     navigation.navigate('User')
+                }}
+            />
+            <Button
+                title="Go to Login"
+                onPress={() => {
+                    navigation.navigate('Login')
                 }}
             />
         </SafeAreaView>

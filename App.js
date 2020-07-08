@@ -15,7 +15,7 @@ import AuthNavigation from './navigation/AuthNavigation';
 import AuthReducer from './store/reducers/AuthReducer'
 // combine reducers
 const rootReducer = combineReducers({
-  Auth: AuthReducer
+  Auth: AuthReducer  
 });
 // create store with middleware
 const store = createStore(rootReducer, applyMiddleware(thunk));
