@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -10,9 +10,15 @@ export default HomeScreen = ({ navigation }) => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <View>
-                <Text>Home Screen</Text>  
+             <View>
+                <Text style={styles.name}>
+                   CopMate
+                </Text>  
             </View>
+          <Image style={{height:200,width:370}}
+          source={require('../assets/traffic.png.webp')} />
+
+            
             <Button
                 title="Go to User"
                 onPress={() => {
@@ -37,4 +43,10 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+
+    name: {
+        justifyContent:'center',
+        fontSize:70,
+
+    }
 });
