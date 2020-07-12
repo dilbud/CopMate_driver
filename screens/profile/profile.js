@@ -1,9 +1,9 @@
- import React from 'react';
+import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useDispatch, useSelector } from 'react-redux';
 
-export default HomeScreen = ({ navigation }) => {
+export default profile = ({ navigation }) => {
 
     const dispatch = useDispatch();
     const availableMeals = useSelector(state => state);
@@ -12,7 +12,6 @@ export default HomeScreen = ({ navigation }) => {
         <SafeAreaView style={styles.container}>
             <View>
                 <Text>Home Screen</Text>
-               
             </View>
             <Button
                 title="Go to User"
@@ -20,7 +19,6 @@ export default HomeScreen = ({ navigation }) => {
                     navigation.navigate('User')
                 }}
             />
-           
         </SafeAreaView>
 
     );
