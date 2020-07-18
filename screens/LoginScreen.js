@@ -6,7 +6,7 @@ export default LoginScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.container}>
             <View>
-                <Text>Login Screen</Text>
+                <Text>Login View</Text>
             </View>
             <Button
                 title="Go to SignUp"
