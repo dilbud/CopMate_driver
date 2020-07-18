@@ -6,7 +6,7 @@ export default UserScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.container}>
             <View>
-                <Text>User Screen</Text>
+                <Text>User Screen View</Text>
             </View>
             <Button
                 title="Go to Home"
