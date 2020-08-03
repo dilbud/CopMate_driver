@@ -40,7 +40,20 @@ export default LoginScreen = ({ navigation }) => {
         Alert.alert('Logged Successfully!');
       }}
           // onPress={this.onLogin.bind(this)}
-        /></View> 
+        />
+        <Button 
+        icon={{ name: 'lock' }}
+          title={'SignUp'}
+          color='darkgreen'
+          
+         
+      // style={styles.input}
+      // onPress={() => {
+      //   Alert.alert('Logged Successfully!');
+      // }}
+          // onPress={this.onLogin.bind(this)}
+        />
+        </View> 
 
 
         </SafeAreaView>
