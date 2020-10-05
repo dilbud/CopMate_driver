@@ -1,0 +1,13 @@
+
+.expo/*
+npm-debug.*
+*.jks
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+web-report/
+/*.lock
+
+.idea/
